@@ -1,0 +1,14 @@
+config MTK_I2C
+	tristate "MediaTek I2C adapter"
+	depends on ARCH_MT2601
+	default y
+	help
+	  This selects the MediaTek(R) Integrated Inter Circuit bus driver.
+	  MediaTek(R) I2C bus adapter is the base for some other I2C client, eg: touch, sensors.
+	  If you want to use MediaTek(R) I2C interface, say Y or M here.
+	  If unsure, say N.
+
+config MTK_I2C_EXTENSION
+	def_bool y if ARCH_MT2601
+	help
+	  Select this if your platform need MTK i2c extension.

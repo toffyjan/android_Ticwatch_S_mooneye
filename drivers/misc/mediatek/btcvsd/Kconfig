@@ -1,0 +1,8 @@
+config MTK_BTCVSD
+	tristate "MediaTek BTCVSD driver"
+	default n
+	---help---
+	  BTCVSD driver support for MediaTek SOC.
+	  If you want to use MediaTek BTCVSD driver, say Y here.
+	  If unsure, say N.
+

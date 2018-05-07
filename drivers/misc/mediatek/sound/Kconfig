@@ -1,0 +1,8 @@
+config MTK_SOUND
+	tristate "MediaTek Sound driver"
+	default n
+	---help---
+	  Sound driver support for MediaTek SOC.
+	  If you want to use MediaTek Sound driver, say Y here.
+	  If unsure, say N.
+
